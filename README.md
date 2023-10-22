@@ -1,1 +1,1 @@
-# P.S.Tamarind Private Limited (Website)
+# Tamarind Website
