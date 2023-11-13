@@ -10,6 +10,12 @@ body {
     font-family: montserrat;
 }
 
+nav {
+    background: #522c69;
+    height: 80px;
+    width: 100%;
+}
+
 /*
 nav {
     background: #522c69;
