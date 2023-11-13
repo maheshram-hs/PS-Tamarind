@@ -11,7 +11,7 @@
 img.logo {
     width: 70px;
     height: 70px;
-    margin: 4px 0 0 40px;
+    margin-left: 40px;
 }
 
 body {
@@ -24,11 +24,9 @@ nav {
     font-weight: 900;
     height: 80px;
     width: 100%;
-}
-
-nav ul {
-    float: right;
-    margin-right: 37%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav ul li {
@@ -47,6 +45,7 @@ a.active, a:hover {
     background: #893bb6;
     transition: 0.33s;
 }
+
 /*
 nav {
     background: #522c69;
