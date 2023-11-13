@@ -8,6 +8,12 @@
     box-sizing: border-box;
 }
 
+img.logo {
+    width: 70px;
+    height: 70px;
+    margin: 4px 0 0 40px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     
@@ -34,12 +40,12 @@ nav ul li {
 nav ul li a {
     color: white;
     padding: 7px 13px;
-    border-radius: 25px;
+    border-radius: 7px;
 }
 
 a.active, a:hover {
     background: #893bb6;
-    transition: 1.5s;
+    transition: 0.33s;
 }
 /*
 nav {
