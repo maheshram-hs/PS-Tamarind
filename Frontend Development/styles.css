@@ -16,6 +16,7 @@ header {
 nav img.logo {
     height: 90%;
     margin-left: 40px;
+    margin-right: 20px;
 }
 
 nav {
@@ -31,13 +32,13 @@ nav {
 
 nav ul {
     display: flex;
-    margin: 0 30% 0 0; /* FIXME: nav links are at the center, but may change once the search bar is added! */
+    margin: auto; /* FIXME: nav links are at the center, but may change once the search bar is added! */
 }
 
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 auto;
 }
 
 nav ul li a {
@@ -54,6 +55,8 @@ a.active, a:hover {
 .search-bar {
     display: flex;
     margin: 0 auto;
+    margin-left: 5%;
+    margin-right: 3%;
     width: 300px;
     padding: 10px;
     border: 1px solid #ccc;
