@@ -8,15 +8,14 @@
     box-sizing: border-box;
 }
 
-img.logo {
-    width: 70px;
-    height: 70px;
+nav img.logo {
+    height: 90%;
     margin-left: 40px;
 }
 
-body {
+header {
     font-family: 'Montserrat', sans-serif;
-    
+    display: flex;
 }
 
 nav {
@@ -27,6 +26,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: static;
+}
+
+nav ul {
+    display: flex;
+    margin: 0 30% 0 0; /* FIXME: nav links are at the center, but may change once the search bar is added! */
 }
 
 nav ul li {
