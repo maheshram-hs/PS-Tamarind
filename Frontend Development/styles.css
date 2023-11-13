@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: montserrat;
+}
+
 /*
 nav {
     background: #522c69;
