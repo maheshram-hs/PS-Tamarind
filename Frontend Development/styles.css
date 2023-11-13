@@ -20,6 +20,16 @@ nav {
     width: 100%;
 }
 
+nav ul {
+    float: right;
+    margin-right: 37%;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
 /*
 nav {
     background: #522c69;
