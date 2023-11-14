@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+.test-largetext { /* DELETE .test-largetext WHEN NAV-LINK TESTING IS NO LONGER NEEDED! */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-weight: 900;
+    font-size: 70px;
+}
+
 header {
     font-family: 'Montserrat', sans-serif;
     display: flex;
