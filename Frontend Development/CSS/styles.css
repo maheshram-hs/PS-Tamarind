@@ -39,6 +39,14 @@ nav {
     position: static;
 }
 
+/*
+nav {
+    background: #522c69;
+    display: flex;
+    justify-content: space-evenly;
+}
+*/
+
 nav ul {
     display: flex;
     margin: auto; /* FIXME: nav links are at the center, but may change once the search bar is added! */
@@ -93,12 +101,14 @@ div.body-container {
     align-items: center;
     margin-top: 20px;
 }
-/*
-nav {
+
+footer {
     background: #522c69;
-    display: flex;
-    justify-content: space-evenly;
+    color: white;
+    margin: 0 auto;
+    padding: 10px 0;
 }
-*/
 
-
+.footer-container {
+    color: orange
+}
