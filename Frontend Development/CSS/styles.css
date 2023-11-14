@@ -101,10 +101,18 @@ a.active, a:hover {
 }
 
 div.body-container {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
+    padding: 10% 10%;
+    justify-content: center;
+    text-align: left;
+}
+
+div.body-container h1 {
+    font-weight: bold;
+    padding: 0 0 50px 0;
 }
 
 footer {
