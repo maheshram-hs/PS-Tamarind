@@ -15,6 +15,7 @@
     margin-top: 20px;
     font-weight: 900;
     font-size: 70px;
+    font-family: sans-serif;
 }
 
 header {
@@ -103,6 +104,8 @@ div.body-container {
 }
 
 footer {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     background: #522c69;
     color: white;
     margin: 0 auto;
