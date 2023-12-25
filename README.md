@@ -1,18 +1,69 @@
-# PS Tamarind Website
+# P.S.Tamarind Private Limited - Website
 
-<h3>"Our Story" Wireframe Target:</h3>
+## Overview
 
-<a href="https://www.figma.com/file/QTQnVP46NRCE20ntjmByr7/pstamarind.com?type=design&node-id=0-1&mode=design&t=nhbQl0RSnfgNaSpx-0">Figma 'index.html' Wireframe</a>
+Welcome to the P.S.Tamarind Private Limited project repository. This project serves as the online platform for P.S.Tamarind Private Limited, dedicated to showcasing our signature tamarind products packed in a distinctive cuboid shape. 
 
-<p></p>
+### Website Features
 
-<img src="https://media.discordapp.net/attachments/1161133998064545862/1172838029082247238/pstamarind.com.jpg?ex=6561c588&is=654f5088&hm=c6b50fe516e2626aa09a6cfd519a817f3caf6d542d2c48f46c4ddb702e3877dd&=&width=320&height=683" alt="'Our Story' Wireframe">
+- **Quality Tamarind:** Explore our premium tamarind selections known for their exceptional taste and quality.
+- **Advertising:** Showcasing our products and highlighting their unique features.
+- **Administrative Tasks:** Handling various administrative functions to maintain operational efficiency.
+- **Contact Information:** Easy access to our contact details for inquiries and collaboration.
 
-<p>----------------------------------------------</p>
+The goal of this website is to serve as an advertising platform, making it easier for users to understand what we offer. Whether you are a potential customer, distributor, or collaborator, we aim to provide a user-friendly experience with clear navigation and readily available contact information.
 
-<h3>Old website (for reference):</h3>
-<a href="https://web.archive.org/web/20220325025210/http://pstamarind.com/index.html">Outdated Homepage</a>
+## Prerequisites
 
-<p></p>
+- Python 3.x
+- Django 5.0
+- uWSGI (for deployment)
+- Other dependencies listed in `requirements.txt`
 
-<img src="https://cdn.discordapp.com/attachments/1161134412679872552/1173490100903092244/image.png?ex=656424d2&is=6551afd2&hm=edd7babd88c2446ef1c22012b957643e4f4d6b0dec64cbfcbdf10c9059ae6480&">
+## Getting Started
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/maheshram-hs/TamarindWebsite.git
+    ```
+
+2. Set up a virtual environment and install dependencies:
+
+    ```bash
+    cd your-repository
+    python -m venv venv
+    source venv/bin/activate  # On macOS/Linux, or venv\Scripts\activate on Windows
+    pip install -r requirements.txt
+    ```
+
+3. Apply migrations:
+
+    ```bash
+    python manage.py migrate
+    ```
+
+4. Run the development server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+5. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
+
+## Contributing
+
+We welcome contributions from the community! If you find a bug, have a feature request, or would like to contribute in any way, please open an issue or submit a pull request.
+
+## License
+
+<TODO>
+
+## Contact
+
+For inquiries or further information, please contact:
+
+Maheshram Shunmuganand
+maheshram.hs@gmail.com
+
+---
