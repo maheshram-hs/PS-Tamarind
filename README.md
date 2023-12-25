@@ -1,5 +1,7 @@
 # P.S.Tamarind Private Limited - Website
 
+Website: pstamarind.com
+
 ## Overview
 
 Welcome to the P.S.Tamarind Private Limited project repository. This project serves as the online platform for P.S.Tamarind Private Limited, dedicated to showcasing our signature tamarind products packed in a distinctive cuboid shape. 
