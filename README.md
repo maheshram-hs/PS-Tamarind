@@ -1,6 +1,6 @@
 # P.S.Tamarind Private Limited - Website
 
-Website: pstamarind.com
+Website: [pstamarind.com](https://pstamarind.com)
 
 ## Overview
 
