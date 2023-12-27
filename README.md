@@ -38,25 +38,35 @@ The goal of this website is to serve as an advertising platform, making it easie
     source venv/bin/activate  # On macOS/Linux, or venv\Scripts\activate on Windows
     pip install -r requirements.txt
     ```
-3. Generate SECRET_KEY
+3. Configure local settings
+   
+    ```bash
+    cp pstamarind/settings.py pstamarind/settings_local.py
+    ```
+    Edit settings_local.py to configure the database and other settings for development. Update the DEBUG setting to True, update SECURE_SSL_REDIRECT to False and add your IP address (replace '0.0.0.0' below) to ALLOWED_HOSTS setting in your settings_local.py file.
+   ```py
+   ALLOWED_HOSTS = ['0.0.0.0', 'pstamarind.com', 'www.pstamarind.com', 'localhost']
+   ```
+   
+5. Generate SECRET_KEY
 
    ```bash
     python -c "import random, string; print(''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(50)))" | cat > secret_key.txt
     ```
 
-4. Apply migrations:
+6. Apply migrations:
 
     ```bash
     python manage.py migrate
     ```
 
-5. Run the development server:
+7. Run the development server:
 
     ```bash
-    python manage.py runserver
+    python manage.py runserver --settings=pstamarind.settings_local
     ```
 
-6. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
+8. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
 
 ## Contributing
 
