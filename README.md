@@ -38,20 +38,25 @@ The goal of this website is to serve as an advertising platform, making it easie
     source venv/bin/activate  # On macOS/Linux, or venv\Scripts\activate on Windows
     pip install -r requirements.txt
     ```
+3. Generate SECRET_KEY
 
-3. Apply migrations:
+   ```bash
+    python -c "import random, string; print(''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(50)))" | cat > secret_key.txt
+    ```
+
+4. Apply migrations:
 
     ```bash
     python manage.py migrate
     ```
 
-4. Run the development server:
+5. Run the development server:
 
     ```bash
     python manage.py runserver
     ```
 
-5. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
+6. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
 
 ## Contributing
 
