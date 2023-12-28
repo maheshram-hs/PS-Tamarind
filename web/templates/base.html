@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<a href="{% url 'index' %}">Home</a>
+<a href="{% url 'about' %}">Our Story</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'blog' %}">Blog</a>
+<a href="{% url 'contact' %}">Coontact</a>
 {% block content %}
 {% endblock %}
 </body>
