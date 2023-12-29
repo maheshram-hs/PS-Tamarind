@@ -43,7 +43,7 @@ The goal of this website is to serve as an advertising platform, making it easie
     ```bash
     vim pstamarind/settings_local.py
     ```
-    Edit settings_local.py to configure the database and other settings for development. Update the DEBUG setting to True, update SECURE_SSL_REDIRECT to False and add your IP address (replace '0.0.0.0' below) to ALLOWED_HOSTS setting in your settings_local.py file.
+    Edit settings_local.py to configure the database and other settings for development. Add your IP address (replace '0.0.0.0' below) to ALLOWED_HOSTS setting in your settings_local.py file.
    ```py
    ALLOWED_HOSTS = ['0.0.0.0', 'pstamarind.com', 'www.pstamarind.com', 'localhost']
    ```
