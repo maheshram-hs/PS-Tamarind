@@ -1,5 +1,13 @@
-
+/* Navigation Bar */
 .custom-logo {
     max-width: 100px;  /* Adjust the max-width as needed */
     height: auto;  /* Maintain the aspect ratio */
+}
+
+.navbar-custom {
+    background-color: #522C69;/* Change this to the desired shade of purple */
+}
+
+.navbar-custom .nav-link {
+    color: white;
 }
