@@ -41,7 +41,7 @@ The goal of this website is to serve as an advertising platform, making it easie
 3. Configure local settings
    
     ```bash
-    cp pstamarind/settings.py pstamarind/settings_local.py
+    vim pstamarind/settings_local.py
     ```
     Edit settings_local.py to configure the database and other settings for development. Update the DEBUG setting to True, update SECURE_SSL_REDIRECT to False and add your IP address (replace '0.0.0.0' below) to ALLOWED_HOSTS setting in your settings_local.py file.
    ```py
