@@ -47,30 +47,39 @@
     </nav>
     {% block content %}
     {% endblock %}
-    <footer class="footer py-4 bg-dark text-light">
-        <div class="container">
+    <footer class="footer py-4">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    <h4 class="text-uppercase">Company Name</h4>
-                    <p>Some description about the company.</p>
-                </div>
-                <div class="col-md-4">
-                    <h4 class="text-uppercase">Contact Information</h4>
-                    <p>Address, phone number, email address</p>
-                </div>
                 <div class="col-md-4">
                     <h4 class="#">Quick Links</h4>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                        <li><a href="{% url 'blog' %}">Blog</a></li>
+                        <li><a href="{% url 'contact' %}">Coontact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Address</h4>
+                    <p>#34, P.Shunmugam Road,<br> 
+                        Kumbakonam, Tamil Nadu<br>
+                        Pin: 612001, India</p>
+                </div>
+                <div class="col-md-4">
+                    <h4 class="text-uppercase">Contact</h4>
+                    <ul class="list-unstyled">
+                        <li>+91 43524 20019</li>
+                        <li>pstamarind@gmail.com</li>
+                        <li>#</li>
+                        <li>#</li>
+                        <li>#</li>
                     </ul>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center">
-                    <p class="mb-0">Copyright © 2024 Your Company Name</p>
+                    <p class="mb-0">Copyright © 2024 P.S.Tamarind Private Limited</p>
                 </div>
             </div>
         </div>
