@@ -13,6 +13,7 @@
 }
 
 /* Footer */
-.footer {
+footer.purple-footer {
     background-color: #522C69;
+    color: white; /* You may want to adjust text color for better visibility */
 }
