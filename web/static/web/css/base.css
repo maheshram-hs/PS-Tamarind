@@ -1,3 +1,8 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
 /* Navigation Bar */
 .custom-logo {
     max-width: 70px;
@@ -33,11 +38,12 @@
     text-decoration: none;
 }
 
-/* Styles for h4 tags */
 .custom-footer h4 {
-    color: #FF7A18; /* Orange color */
+    color: #FF7A18;
+    /* Orange color */
 }
 
+/* You can adjust the value as needed */
 .custom-container {
-    min-height: 70vh; /* You can adjust the value as needed */
+    min-height: 71vh;
 }
