@@ -1,11 +1,11 @@
 /* Navigation Bar */
 .custom-logo {
-    max-width: 70px;  /* Adjust the max-width as needed */
-    height: auto;  /* Maintain the aspect ratio */
+    max-width: 70px;
+    height: auto;
 }
 
 .navbar-custom {
-    background-color: #522C69;/* Change this to the desired shade of purple */
+    background-color: #522C69;
 }
 
 .navbar-custom .nav-link {
@@ -13,7 +13,31 @@
 }
 
 /* Footer */
-purple-footer {
+.custom-footer {
     background-color: #522C69;
-    color: white; /* You may want to adjust text color for better visibility */
+    color: white;
+}
+
+.custom-logo-ft {
+    max-width: 150px;
+    height: auto;
+}
+
+.custom-pslogo-ft {
+    max-width: 250px;
+    height: auto;
+}
+
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Styles for h4 tags */
+.custom-footer h4 {
+    color: #FF7A18; /* Orange color */
+}
+
+.custom-container {
+    min-height: 70vh; /* You can adjust the value as needed */
 }
