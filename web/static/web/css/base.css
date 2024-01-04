@@ -1,6 +1,7 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 350;
+    letter-spacing: 0.1em;
 }
 
 /* Navigation Bar */
@@ -24,12 +25,12 @@ body {
 }
 
 .custom-logo-ft {
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
 }
 
 .custom-pslogo-ft {
-    max-width: 250px;
+    max-width: 198px;
     height: auto;
 }
 
