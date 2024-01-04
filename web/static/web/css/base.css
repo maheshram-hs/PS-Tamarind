@@ -5,7 +5,7 @@ body {
 
 /* Navigation Bar */
 .custom-logo {
-    max-width: 70px;
+    max-width: 80px;
     height: auto;
 }
 
@@ -43,7 +43,8 @@ body {
     /* Orange color */
 }
 
-/* You can adjust the value as needed */
+/* You can adjust the value to update the viewports as needed
 .custom-container {
-    min-height: 71vh;
+    min-height: 100vh;
 }
+*/
