@@ -41,7 +41,13 @@ body {
 
 .custom-footer h4 {
     color: #FF7A18;
+    font-weight: 300;
+    letter-spacing: 0.1em;
     /* Orange color */
+}
+
+.social_icons {
+    width: 30px
 }
 
 /* You can adjust the value to update the viewports as needed

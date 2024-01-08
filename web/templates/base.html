@@ -52,7 +52,7 @@
     {% endblock %}
     <footer class="custom-footer">
         <div class="container-fluid">
-            <div class="row py-5 d-flex justify-content-center">
+            <div class="row pt-5 pb-3 d-flex justify-content-center">
                 <div class="col-md-2 d-flex d-flex justify-content-start align-items-center">
                     <a class="navbar-brand"><img src="{% static 'web/img/LogoBR.png' %}" class="custom-logo-ft"></a>
                 </div>
@@ -91,17 +91,20 @@
                         <li>W: pstamarind.com</li>
                     </ul>
                 </div>
-                <div class="col-md-2 d-flex d-flex justify-content-end align-items-center">
+                <div class="col-md-2 d-flex justify-content-end align-items-center">
                     <a class="navbar-brand"><img src="{% static 'web/img/ps-text.png' %}" class="custom-pslogo-ft"></a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 text-left">
+            <div class="row pb-5 d-flex justify-content-center">
+                <div class="col-md-4 pt-3 text-left" style="border-top: 1px solid #ccc;">
                     <p class="mb-0">Copyright © 2024 P.S.Tamarind Private Limited</p>
-                </div>
-                <div class="col-md-6 text-right">
-                    <p class="mb-0">Follow us:</p>
-                    <a class="navbar-brand"><img src="{% static 'web/img/Facebook/Secondary-Logo/' %}"></a>
+                </div>                
+                <div class="col-md-6 pt-3 d-flex justify-content-end" style="border-top: 1px solid #ccc;">
+                    <p class="pe-4">Follow us:</p>
+                    <a class="navbar-brand me-2"><img src="{% static 'web/img/Instagram.svg' %}" class="social_icons"></a>
+                    <a class="navbar-brand me-2"><img src="{% static 'web/img/Facebook.png' %}" class="social_icons"></a>
+                    <a class="navbar-brand me-2"><img src="{% static 'web/img/WhatsApp.svg' %}" class="social_icons"></a>
+                    <a class="navbar-brand"><img src="{% static 'web/img/X.svg' %}" class="social_icons"></a>
                 </div>
             </div>
         </div>
