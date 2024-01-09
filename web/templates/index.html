@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block head %}
+    {% block css %}
+        <link rel="stylesheet" type="text/css" href="{% static 'web/css/index.css' %}">
+    {% endblock %}
+{% endblock %} 
+
 {% block content %}
 <div class="container-fluid p-4 vh-100">
     <div class="container mt-5">
@@ -22,8 +28,4 @@
         </div>
     </div>
 </div>
-{% endblock %}
-
-{% block extra_head %}
-    <link rel="stylesheet" type="text/css" href="{% static 'web/css/index.css' %}">
 {% endblock %}
