@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-weight: 350;
+    letter-spacing: 0.1em;
+}
+
+/* Navigation Bar */
+.custom-logo {
+    max-width: 80px;
+    height: auto;
+}
+
+.navbar-custom {
+    background-color: #522C69;
+}
+
+.navbar-custom .nav-link {
+    color: white;
+}
+
+/* Footer */
+.custom-footer {
+    background-color: #522C69;
+    color: white;
+}
+
+.custom-logo-ft {
+    max-width: 120px;
+    height: auto;
+}
+
+.custom-pslogo-ft {
+    max-width: 198px;
+    height: auto;
+}
+
+.custom-footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.custom-footer h4 {
+    color: #FF7A18;
+    font-weight: 300;
+    letter-spacing: 0.1em;
+    /* Orange color */
+}
+
+.social_icons {
+    width: 30px
+}
