@@ -2,10 +2,6 @@ body {
     font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     font-weight: 350;
     letter-spacing: 0.1em;
-    height: 100vh;
-    width: 10vh;
-    margin: 0rem;
-    overflow: hidden;
 }
 
 /* Navigation Bar */

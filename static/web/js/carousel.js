@@ -7,6 +7,8 @@ window.onmousedown = e => {
 window.onmouseup = () => {
     track.dataset.mouseDownAt = "0";
     track.dataset.prevPercentage = track.dataset.percentage;
+    Math.min(nextPercentage, 0)
+    Math.max(nextPercentage, -100)
 }
 
 window.onmousemove = e => {
@@ -20,5 +22,13 @@ window.onmousemove = e => {
 
     track.dataset.percentage = nextPercentage;
 
-    track.style.transform = `translate(${nextPercentage}%, -50%)`;
+    track.animate({
+        transform: `translate(${nextPercentage}%, -50%)`
+    }, { duration: 1200, fill: "forwards" });
+}
+
+for (const image of track.getElementsByClassName("cimage")) {
+    image.animate({
+        objectPosition:`${100 + nextPercentage}% center`
+    }, { duration: 1200, fill: "forwards" })
 }
