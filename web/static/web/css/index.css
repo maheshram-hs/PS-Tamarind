@@ -1,10 +1,21 @@
+.custom-box-xl {
+    height: 530px;
+    border-radius: 20px;
+    /* Any additional styles you want to apply */
+}
+
 .custom-box {
     height: 350px;
-    border-radius: 30px;
+    border-radius: 20px;
     /* Any additional styles you want to apply */
 }
 
 .shadow {
     /* Adjust shadow properties from Bootstrap utility to your preference */
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);}
+
+.pstext {
+    border-radius: 20px;
+    background: conic-gradient(from 205deg at 71.21% 53.94%, #A54ADD 37.79999881982803deg, #0CBFE7 153.00000429153442deg, #FF7A18 226.79999828338623deg);
 }
+
