@@ -19,3 +19,20 @@
     background: conic-gradient(from 205deg at 71.21% 53.94%, #A54ADD 37.79999881982803deg, #0CBFE7 153.00000429153442deg, #FF7A18 226.79999828338623deg);
 }
 
+#image-track > .cimage {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    /*
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    */
+}
