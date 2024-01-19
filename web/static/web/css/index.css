@@ -20,11 +20,10 @@
 }
 
 .body2 {
-    height: 40vmin;
+    height: 50vmin;
     width: 100%;
     background-color: white;
     margin: 0rem;
-    
   }
 
 #image-track {
@@ -37,10 +36,10 @@
   }
   
   #image-track > .cimage {
-    width: 20vmin;
-    height: 36vmin;
+    width: 30vmin;
+    height: 46vmin;
     object-fit: cover;
     object-position: 100% center;
-    border-radius: 10px;
+    border-radius: 20px;
     user-select: none;
   }
