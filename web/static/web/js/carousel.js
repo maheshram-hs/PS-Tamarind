@@ -1,34 +1,50 @@
 const track = document.getElementById("image-track");
+let animationFrame;
 
-window.onmousedown = e => {
-    track.dataset.mouseDownAt = e.clientX;
-}
+const handleOnDown = e => {
+  track.dataset.mouseDownAt = e.clientX || e.touches[0].clientX;
+  animateSlide();
+};
 
-window.onmouseup = () => {
-    track.dataset.mouseDownAt = "0";
-    track.dataset.prevPercentage = track.dataset.percentage;
-    Math.min(nextPercentage, 0)
-    Math.max(nextPercentage, -100)
-}
+const handleOnUp = () => {
+  track.dataset.mouseDownAt = "0";
+  track.dataset.prevPercentage = track.dataset.percentage;
+  cancelAnimationFrame(animationFrame);
+};
 
-window.onmousemove = e => {
-    if (track.dataset.mouseDownAt === "0") return;
+const handleOnMove = e => {
+  if (track.dataset.mouseDownAt === "0") return;
 
-    const mouseDelta = parseFloat(track.dataset.mouseDownAt) - e.clientX,
-        maxDelta = window.innerWidth / 2;
+  const mouseDelta = parseFloat(track.dataset.mouseDownAt) - (e.clientX || e.touches[0].clientX),
+    maxDelta = window.innerWidth / 2;
 
-    const percentage = (mouseDelta / maxDelta) * -100;
-    const nextPercentage = parseFloat(track.dataset.prevPercentage) + percentage;
+  const percentage = (mouseDelta / maxDelta) * -100,
+    nextPercentageUnconstrained = parseFloat(track.dataset.prevPercentage) + percentage,
+    nextPercentage = Math.max(Math.min(nextPercentageUnconstrained, 0), -100);
 
-    track.dataset.percentage = nextPercentage;
+  track.dataset.percentage = nextPercentage;
+  animateSlide();
+};
 
-    track.animate({
-        transform: `translate(${nextPercentage}%, -50%)`
-    }, { duration: 1200, fill: "forwards" });
-}
+const animateSlide = () => {
+  animationFrame = requestAnimationFrame(() => {
+    track.style.transform = `translate(${track.dataset.percentage}%, -50%)`;
 
-for (const image of track.getElementsByClassName("cimage")) {
-    image.animate({
-        objectPosition:`${100 + nextPercentage}% center`
-    }, { duration: 1200, fill: "forwards" })
-}
+    for (const image of track.getElementsByClassName("cimage")) {
+      image.style.objectPosition = `${100 + parseFloat(track.dataset.percentage)}% center`;
+    }
+
+    if (track.dataset.mouseDownAt !== "0") {
+      animateSlide();
+    }
+  });
+};
+
+window.onmousedown = e => handleOnDown(e);
+window.ontouchstart = e => handleOnDown(e.touches[0]);
+
+window.onmouseup = () => handleOnUp();
+window.ontouchend = () => handleOnUp();
+
+window.onmousemove = e => handleOnMove(e);
+window.ontouchmove = e => handleOnMove(e.touches[0]);
