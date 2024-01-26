@@ -7,20 +7,25 @@
 }
 
 .custom-box {
-  height: 20rem;
+  height: 15rem;
   border-radius: 20px;
 }
 
 .custom-box img {
-  width: 24rem;
+  width: auto;
   /* Adjust the width as needed */
-  height: auto;
+  height: 10rem;
   /* Maintain the aspect ratio */
 }
 
 .psbox {
   background: rgb(34, 193, 195);
   background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.intro-txt-container {
+  height: 38vmin;
+  max-width: 70%;
 }
 
 .introP {
@@ -36,7 +41,7 @@
 /* Carouel */
 
 .body2 {
-  height: 50vmin;
+  height: 40vmin;
   width: 100%;
   background-color: white;
   margin: 0rem;
@@ -54,8 +59,8 @@
 }
 
 #image-track>.cimage {
-  width: 20vmin;
-  height: 36vmin;
+  width: 23vmin;
+  height: 39vmin;
   object-fit: cover;
   object-position: 100% center;
   border-radius: 20px;

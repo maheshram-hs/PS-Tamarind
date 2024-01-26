@@ -8,25 +8,22 @@
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid my-4">
+<div class="container-fluid">
     <div class="container mt-5">
-        <div class="row mb-5">
-            <div class="col-md-12">
-                <div class="shadow p-4 banner">
-                </div>
-            </div>
+        <div class="shadow p-4 banner"></div>
+    </div>
+
+    <div class="container">
+        <div class="intro-txt-container d-flex flex-column justify-content-center align-items-center mx-auto">
+            <p class="introP text-center mb-0">
+                P.S.Tamarind Private Limited is a third-generation, family-owned company known for providing our
+                customers with the highest quality tamarind around the world.
+            </p>
         </div>
     </div>
-
-    <div class="container my-5 p-5">
-        <p class="introP">
-            P.S.Tamarind Private Limited is a third-generation, family-owned<br> company known for providing our
-            customers with the highest<br> quality tamarind around the world.
-        </p>
-    </div>
-
-    <div class="container mt-5">
-        <h2 class="#">A Choice For Quality</h1>
+    
+    <div class="container">
+        <h2 class="mb-4">A Choice For Quality</h1>
             <div class="body2">
                 <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
                     <img class="cimage shadow" src="{% static 'web/img/carousel/gallery1.jpg' %}" draggable="false">
@@ -41,26 +38,27 @@
                 </div>
             </div>
     </div>
-
+<!--
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="shadow custom-box p-4 d-flex align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="shadow custom-box p-5 d-flex align-items-center justify-content-center">
                     <img src="{% static 'web/img/ps-text.png' %}" class="img-fluid">
                 </div>
             </div>
-            <div class="col-md-6 mb-4">
-                <div class="shadow custom-box p-4 d-flex align-items-center justify-content-center">
+            <div class="col-md-6">
+                <div class="shadow custom-box p-5 d-flex align-items-center justify-content-center">
                     <img src="{% static 'web/img/500g_tamarind.png' %}" class="img-fluid">
                 </div>
             </div>
         </div>
     </div>
+-->
     <section class="featured-articles">
-        <div class="container">
-            <h2>Featured Articles</h2>
+        <div class="container mt-5">
+            <h2 class="my-5">Featured Articles</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col mt-0 mb-5">
                     <div class="card p-3 shadow">
                         <div class="card-header">
                             <small class="fw-bold article-txt">Article on </small>
