@@ -1,9 +1,14 @@
 /* Main Article */
 
 .banner {
-  height: 450px;
+  
   border-radius: 20px;
-  text-align: center;
+}
+.banner img {
+  height: auto;
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .custom-box {
