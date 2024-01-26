@@ -2,47 +2,86 @@
 {% load static %}
 
 {% block head %}
-    {% block css %}
-        <link rel="stylesheet" type="text/css" href="{% static 'web/css/index.css' %}">
-    {% endblock %}
-{% endblock %} 
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/index.css' %}">
+{% endblock %}
+{% endblock %}
 
 {% block content %}
 <div class="container-fluid my-4">
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 mb-4">
-                <div class="shadow p-4 custom-box">
-                </div>
-            </div>
-            <div class="col-md-6 mb-4">
-                <div class="shadow p-4 custom-box">
-                </div>
-            </div>
-        </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-12">
-                <div class="shadow p-4 custom-box">
+                <div class="shadow p-4 banner">
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="container my-5 p-5">
+        <p class="introP">
+            P.S.Tamarind Private Limited is a third-generation, family-owned<br> company known for providing our
+            customers with the highest<br> quality tamarind around the world.
+        </p>
+    </div>
+
     <div class="container mt-5">
         <h2 class="#">A Choice For Quality</h1>
-        <div class="body2">
-            <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery1.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery2.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery3.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery4.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery5.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery6.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery7.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery8.jpg' %}" draggable="false">
-                <img class="cimage shadow" src="{% static 'web/img/carousel/gallery9.jpg' %}" draggable="false">
+            <div class="body2">
+                <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery1.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery2.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery3.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery4.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery5.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery6.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery7.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery8.jpg' %}" draggable="false">
+                    <img class="cimage shadow" src="{% static 'web/img/carousel/gallery9.jpg' %}" draggable="false">
+                </div>
+            </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="shadow custom-box p-4 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'web/img/ps-text.png' %}" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="shadow custom-box p-4 d-flex align-items-center justify-content-center">
+                    <img src="{% static 'web/img/500g_tamarind.png' %}" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>
+    <section class="featured-articles">
+        <div class="container">
+            <h2>Featured Articles</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card p-3 shadow">
+                        <div class="card-header">
+                            <small class="fw-bold article-txt">Article on </small>
+                            <small class="text-muted">Nov 1, 2023</small>
+                        </div>
+                        <div class="card-body py-0">
+                            <h4 class="card-title py-4">The Best Website? A Story</h5>
+                            <h6 class="topic-txt">WEB DESIGN</h6>
+                        </div>
+                        <div class="d-flex align-items-start px-3 mb-3">
+                            <a href="#" class="btn p-0 text-muted">Read more...</a>
+                        </div>
+                        <div class="card-footer">
+                            <img src="{% static 'web/img/carousel/gallery1.jpg' %}" class="card-profile">
+                            <span class="fw-bold ps-2">S.Maheshram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="{% static 'web/js/carousel.js' %}"></script>
 </div>
 {% endblock %}
