@@ -1,46 +1,110 @@
-.custom-box-xl {
-    height: 530px;
-    border-radius: 20px;
-    /* Any additional styles you want to apply */
+/* Main Article */
+
+.banner {
+  
+  border-radius: 20px;
+}
+.banner img {
+  height: auto;
+  width: 100%;
 }
 
 .custom-box {
-    height: 350px;
-    border-radius: 20px;
-    /* Any additional styles you want to apply */
+  height: 15rem;
+  border-radius: 20px;
+}
+
+.custom-box img {
+  width: auto;
+  /* Adjust the width as needed */
+  height: 10rem;
+  /* Maintain the aspect ratio */
+}
+
+.psbox {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
+}
+
+.intro-txt-container {
+  height: 38vmin;
+  max-width: 70%;
+}
+
+.introP {
+  text-align: center;
+  font-size: x-large;
+  letter-spacing: 0.1em;
 }
 
 .shadow {
-    /* Adjust shadow properties from Bootstrap utility to your preference */
-    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);}
-
-.pstext {
-    border-radius: 20px;
-    background: conic-gradient(from 205deg at 71.21% 53.94%, #A54ADD 37.79999881982803deg, #0CBFE7 153.00000429153442deg, #FF7A18 226.79999828338623deg);
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);
 }
 
+/* Carouel */
+
 .body2 {
-    height: 40vmin;
-    width: 100%;
-    background-color: white;
-    margin: 0rem;
-    
-  }
+  height: 40vmin;
+  width: 100%;
+  background-color: white;
+  margin: 0rem;
+  overflow: hidden;
+}
 
 #image-track {
-    display: flex;
-    gap: 4vmin;
-    position: relative;
-    top: 50%;
-    transform: translate(0%, -50%); 
-    user-select: none; /* -- Prevent image highlighting -- */
-  }
-  
-  #image-track > .cimage {
-    width: 20vmin;
-    height: 36vmin;
-    object-fit: cover;
-    object-position: 100% center;
-    border-radius: 10px;
-    user-select: none;
-  }
+  display: flex;
+  gap: 4vmin;
+  position: relative;
+  top: 50%;
+  transform: translate(0%, -50%);
+  user-select: none;
+  /* -- Prevent image highlighting -- */
+}
+
+#image-track>.cimage {
+  width: 23vmin;
+  height: 39vmin;
+  object-fit: cover;
+  object-position: 100% center;
+  border-radius: 20px;
+  user-select: none;
+}
+
+/* Featured Articles */
+
+.card {
+  width: 35vmin;
+  min-height: 40vmin;
+  border: 0;
+  border-radius: 20px;
+}
+
+.card-header {
+  border: 0;
+  border-radius: 10px;
+}
+
+.article-txt {
+  color: #A54ADD;
+}
+
+.card-title {
+  margin: 0;
+}
+
+.topic-txt {
+  color: #FF7A18;
+  margin: 0;
+}
+
+.card-footer {
+  background-color: white;
+  border: 0;
+}
+
+.card-profile {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
