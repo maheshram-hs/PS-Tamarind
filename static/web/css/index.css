@@ -1,12 +1,16 @@
 /* Main Article */
 
-.banner {
-  
-  border-radius: 20px;
+.hero-section {
+  background: url('{% static "web/img/banner.jpg" %}') no-repeat center center;
+  background-size: cover;
+  color: black; /* Set text color to be visible on the image */
+  padding: 0; /* Adjust the padding as needed */
 }
-.banner img {
-  height: auto;
-  width: 100%;
+
+/* Style for text in the hero section */
+.hero-section h1,
+.hero-section p {
+  margin-bottom: 20px;
 }
 
 .custom-box {
