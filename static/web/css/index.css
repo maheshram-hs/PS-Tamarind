@@ -1,7 +1,7 @@
 /* Main Article */
 
 .hero-section {
-  background: url('{% static "web/img/banner.jpg" %}') no-repeat center center;
+  background: url("{% static '.jpg' %}") no-repeat center center;
   background-size: cover;
   color: black; /* Set text color to be visible on the image */
   padding: 0; /* Adjust the padding as needed */
@@ -83,7 +83,8 @@
   border-radius: 20px;
 }
 
-.card-header {
+.custom-card .card-header {
+  background-color: white;
   border: 0;
   border-radius: 10px;
 }
