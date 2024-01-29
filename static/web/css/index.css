@@ -1,9 +1,14 @@
 /* Main Article */
 
 .hero-section {
-  background: url("{% static '.jpg' %}") no-repeat center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 70vh;
+  background: url('../img/banner.jpg') no-repeat center center;
   background-size: cover;
-  color: black; /* Set text color to be visible on the image */
+  color: white; /* Set text color to be visible on the image */
   padding: 0; /* Adjust the padding as needed */
 }
 
@@ -14,7 +19,7 @@
 }
 
 .custom-box {
-  height: 15rem;
+  height: 20rem;
   border-radius: 20px;
 }
 
@@ -31,7 +36,7 @@
 }
 
 .intro-txt-container {
-  height: 38vmin;
+  height: 40vmin;
   max-width: 70%;
 }
 
@@ -48,7 +53,7 @@
 /* Carouel */
 
 .body2 {
-  height: 40vmin;
+  height: 45vmin;
   width: 100%;
   background-color: white;
   margin: 0rem;
