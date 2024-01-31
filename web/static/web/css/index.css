@@ -1,4 +1,4 @@
-/* Main Article */
+/* Hero Section */
 
 .hero-section {
   display: flex;
@@ -18,6 +18,8 @@
   margin-bottom: 20px;
 }
 
+/* Custom Boxes */
+
 .custom-box {
   height: 20rem;
   border-radius: 20px;
@@ -25,14 +27,7 @@
 
 .custom-box img {
   width: auto;
-  /* Adjust the width as needed */
   height: 10rem;
-  /* Maintain the aspect ratio */
-}
-
-.psbox {
-  background: rgb(34, 193, 195);
-  background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(253, 187, 45, 1) 100%);
 }
 
 .intro-txt-container {
@@ -53,7 +48,7 @@
 /* Carouel */
 
 .body2 {
-  height: 45vmin;
+  height: 48vmin;
   width: 100%;
   background-color: white;
   margin: 0rem;
@@ -117,4 +112,18 @@
   width: 50px;
   height: 50px;
   object-fit: cover;
+}
+
+/* World Map */
+
+#map {
+  height: 30rem;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0;
+}
+
+#map .img {
+  height: auto;
+  width: auto;
 }
