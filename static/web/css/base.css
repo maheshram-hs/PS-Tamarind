@@ -20,6 +20,7 @@ body {
 
 /* Footer */
 .custom-footer {
+    border: 0;
     background-color: #522C69;
     color: white;
 }
