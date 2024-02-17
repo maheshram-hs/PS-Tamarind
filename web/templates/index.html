@@ -4,10 +4,7 @@
 {% block head %}
 {% block css %}
 <link rel="stylesheet" type="text/css" href="{% static 'web/css/index.css' %}">
-<!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-<!-- Leaflet JavaScript -->
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 {% endblock %}
 {% endblock %}
 
@@ -117,18 +114,14 @@
         <h2 class="my-5">Available All Over the World</h2>
         <div class="row">
             <div class="col-md-12 mb-5">
-                <div id="map" class="shadow d-flex align-items-center justify-content-center mb-5">
-                    <!-- Leaflet JavaScript -->
-                    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-                    <!-- Your custom JavaScript -->
-                    <script src="{% static 'yourapp/js/map.js' %}"></script>
-                </div>
+                <div id="map" class="shadow d-flex align-items-center justify-content-center mb-5"></div>
             </div>
         </div>
     </div>
 </section>
 
 <script src="{% static 'web/js/carousel.js' %}"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="{% static 'web/js/map.js' %}"></script>
 
 {% endblock %}
