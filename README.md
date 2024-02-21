@@ -1,5 +1,7 @@
 # P.S.Tamarind Private Limited - Website
 
+Website: [pstamarind.com](https://pstamarind.com)
+
 ## Overview
 
 Welcome to the P.S.Tamarind Private Limited project repository. This project serves as the online platform for P.S.Tamarind Private Limited, dedicated to showcasing our signature tamarind products packed in a distinctive cuboid shape. 
@@ -36,20 +38,35 @@ The goal of this website is to serve as an advertising platform, making it easie
     source venv/bin/activate  # On macOS/Linux, or venv\Scripts\activate on Windows
     pip install -r requirements.txt
     ```
+3. Configure local settings
+   
+    ```bash
+    vim pstamarind/settings_local.py
+    ```
+    Edit settings_local.py to configure the database and other settings for development. Add your IP address (replace '0.0.0.0' below) to ALLOWED_HOSTS setting in your settings_local.py file.
+   ```py
+   ALLOWED_HOSTS = ['0.0.0.0', 'pstamarind.com', 'www.pstamarind.com', 'localhost']
+   ```
+   
+5. Generate SECRET_KEY
 
-3. Apply migrations:
+   ```bash
+    python -c "import random, string; print(''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(50)))" | cat > secret_key.txt
+    ```
+
+6. Apply migrations:
 
     ```bash
     python manage.py migrate
     ```
 
-4. Run the development server:
+7. Run the development server:
 
     ```bash
-    python manage.py runserver
+    python manage.py runserver --settings=pstamarind.settings_local
     ```
 
-5. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
+8. Visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/) in your browser to access the development server.
 
 ## Contributing
 

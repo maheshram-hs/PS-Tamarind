@@ -1,0 +1,6 @@
+# To run 
+> python manage.py runserver
+> python manage.py runserver --settings=pstamarind.settings_local  #Instead of this...
+
+# Run
+> export DJANGO_SETTINGS_MODULE=pstamarind.settings_local
