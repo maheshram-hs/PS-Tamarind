@@ -51,7 +51,7 @@ The goal of this website is to serve as an advertising platform, making it easie
 5. Generate SECRET_KEY
 
    ```bash
-    python -c "import random, string; print(''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(50)))" | cat > secret_key.txt
+python -c "import random, string; print(''.join(random.choice(string.ascii_letters + string.digits + string.punctuation) for i in range(50)))" | cat > secret_key.txt
     ```
 
 6. Apply migrations:
