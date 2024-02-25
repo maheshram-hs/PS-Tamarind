@@ -23,3 +23,4 @@ document.addEventListener('DOMContentLoaded', function () {
         L.circleMarker(coordinates, { color: 'purple', radius: 10 }).addTo(map);
     }
 });
+
