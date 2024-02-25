@@ -29,3 +29,7 @@ Thumbs.db
 # Secret Keys
 secret_key.txt
 
+# Deployment-server files
+pstamarind_uwsgi.ini
+uwsgi_params
+
