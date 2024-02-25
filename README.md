@@ -75,9 +75,9 @@ We welcome contributions from the community! If you find a bug, have a feature r
 
 ## License
 
-This project is licensed under the [P.S. Tamarind Private Limited Proprietary License](LICENSE).
+This project is licensed under the [P.S.Tamarind Private Limited Proprietary License](LICENSE).
 
-For inquiries about commercial licensing, please contact P.S.Tamarind Private Limited at pstamarind@gmail.com.
+For inquiries about commercial licensing, please contact P.S.Tamarind Private Limited at info@pstamarind.com.
 
 ## Contact
 
