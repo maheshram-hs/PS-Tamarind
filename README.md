@@ -20,6 +20,7 @@ The goal of this website is to serve as an advertising platform, making it easie
 - Python 3.x
 - Django 5.0
 - uWSGI (for deployment)
+- Nginx (for deployment)
 - Other dependencies listed in `requirements.txt`
 
 ## Getting Started
