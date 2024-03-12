@@ -1,3 +1,7 @@
-.viewA {
-    height: 100vh;
+.hero-section {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background: url('../img/banner.jpg') no-repeat center center;
+    background-size: cover;
 }

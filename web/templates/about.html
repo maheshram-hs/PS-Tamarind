@@ -2,15 +2,100 @@
 {% load static %}
 
 {% block head %}
-    {% block css %}
-        <link rel="stylesheet" type="text/css" href="{% static 'web/css/about.css' %}">
-    {% endblock %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/about.css' %}">
+{% endblock %}
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid viewA">
-    <!-- Your content goes here -->
-    <h1>Our Story</h1>
-    <p>P.Shunmugam</p>
-</div>
+<main>
+    <section class="hero-section">
+        <div class="container px-5">
+            <div class="row">
+                <div class="col text-start text-white px-0">
+                    <h1 class="fw-bold display-2">P.S.Tamarind Private Limited</h1>
+                    <p class="fs-3">The Tangy Taste of India, <br>Since 1938</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container px-5">
+        <div class="row my-5">
+            <div class="col-md-6 py-5">
+                <img src="{% static 'web/img/intro-img.jpg' %}" class="img-fluid w-100 h-100 rounded shadow">
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <p class=" pt-5 px-3 text-start">
+                    P.S.Tamarind Private Limited is a third-generation, family-owned company known for providing our
+                    customers with the highest quality tamarind around the world.
+                </p>
+            </div>
+        </div>
+        <h2 class="my-5">A Choice for Quality</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card h-100 border-0">
+                    <img src="{% static 'web/img/500g_tamarind.png' %}" class="card-img-top w-60 mb-3" alt="...">
+                    <div class="card-body">
+                        <p class="card-title text-muted text-center pb-3">250 grams</p>
+                        <p class="card-text pt-2 px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Praesentium reprehenderit enim quia, quasi libero deleniti sed repellat quidem fugit id eum?
+                            Voluptatem quae consequatur tempora?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0">
+                    <img src="{% static 'web/img/500g_tamarind.png' %}" class="card-img-top w-60 mb-3" alt="...">
+                    <div class="card-body">
+                        <p class="card-title text-muted text-center pb-3">500 grams</p>
+                        <p class="card-text pt-2 px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Praesentium reprehenderit enim quia, quasi libero deleniti sed repellat quidem fugit id eum?
+                            Voluptatem quae consequatur tempora?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 border-0">
+                    <img src="{% static 'web/img/500g_tamarind.png' %}" class="card-img-top w-60 mb-3" alt="...">
+                    <div class="card-body">
+                        <p class="card-title text-muted text-center pb-3">1 kilogram</p>
+                        <p class="card-text pt-2 px-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                            Praesentium reprehenderit enim quia, quasi libero deleniti sed repellat quidem fugit id eum?
+                            Voluptatem quae consequatur tempora?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="my-5">The Journey to Benchmark</h2>
+        <div class="row">
+            <div class="col-md-12 col-lg-6 px-0">
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid w-100 h-100" src="https://picsum.photos/200" alt="">
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid w-100 h-100" src="https://picsum.photos/200" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid w-100 h-100" src="https://picsum.photos/200" alt="">
+                    </div>
+                    <div class="col-md-6 px-0">
+                        <img class="img-fluid w-100 h-100" src="https://picsum.photos/200" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 px-0">
+                <div class="row">
+                    <div class="col-md-6  col-lg-12 px-0">
+                        <img class="img-fluid w-100 h-100" src="https://picsum.photos/200" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="my-5">Available All Over the World</h2>
+    </div>
+</main>
 {% endblock %}

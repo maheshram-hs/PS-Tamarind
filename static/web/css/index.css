@@ -15,14 +15,14 @@
 /* Style for text in the hero section */
 .hero-section h1,
 .hero-section p {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 /* Custom Boxes */
 
 .custom-box {
   height: 20rem;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .custom-box img {
@@ -70,7 +70,7 @@
   height: 39vmin;
   object-fit: cover;
   object-position: 100% center;
-  border-radius: 20px;
+  border-radius: 10px;
   user-select: none;
 }
 
@@ -80,7 +80,7 @@
   width: 35vmin;
   min-height: 40vmin;
   border: 0;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .custom-card .card-header {
@@ -118,7 +118,7 @@
 
 #map {
   height: 30rem;
-  border-radius: 20px;
+  border-radius: 10px;
   overflow: hidden;
   padding: 0;
 }
