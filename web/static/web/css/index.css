@@ -1,112 +1,15 @@
 /* Hero Section */
-
 .hero-section {
   display: flex;
   align-items: center;
-  justify-content: center;
-
   height: 70vh;
   background: url('../img/banner.jpg') no-repeat center center;
   background-size: cover;
-  color: white; /* Set text color to be visible on the image */
-  padding: 0; /* Adjust the padding as needed */
 }
 
-/* Style for text in the hero section */
-.hero-section h1,
-.hero-section p {
-  margin-bottom: 10px;
-}
+/* Galary Section > */
 
-/* Custom Boxes */
-
-.custom-box {
-  height: 20rem;
-  border-radius: 10px;
-}
-
-.custom-box img {
-  width: auto;
-  height: 10rem;
-}
-
-.intro-txt-container {
-  height: 40vmin;
-  max-width: 70%;
-}
-
-.introP {
-  text-align: center;
-  font-size: x-large;
-  letter-spacing: 0.1em;
-}
-
-.shadow {
-  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);
-}
-
-/* Carouel */
-
-.body2 {
-  height: 48vmin;
-  width: 100%;
-  background-color: white;
-  margin: 0rem;
-  overflow: hidden;
-}
-
-#image-track {
-  display: flex;
-  gap: 4vmin;
-  position: relative;
-  top: 50%;
-  transform: translate(0%, -50%);
-  user-select: none;
-  /* -- Prevent image highlighting -- */
-}
-
-#image-track>.cimage {
-  width: 23vmin;
-  height: 39vmin;
-  object-fit: cover;
-  object-position: 100% center;
-  border-radius: 10px;
-  user-select: none;
-}
-
-/* Featured Articles */
-
-.card {
-  width: 35vmin;
-  min-height: 40vmin;
-  border: 0;
-  border-radius: 10px;
-}
-
-.custom-card .card-header {
-  background-color: white;
-  border: 0;
-  border-radius: 10px;
-}
-
-.article-txt {
-  color: #A54ADD;
-}
-
-.card-title {
-  margin: 0;
-}
-
-.topic-txt {
-  color: #FF7A18;
-  margin: 0;
-}
-
-.card-footer {
-  background-color: white;
-  border: 0;
-}
-
+/* Article Section */
 .card-profile {
   border-radius: 50%;
   width: 50px;
@@ -114,16 +17,17 @@
   object-fit: cover;
 }
 
-/* World Map */
-
-#map {
-  height: 30rem;
-  border-radius: 10px;
-  overflow: hidden;
-  padding: 0;
+.article-title {
+  color: #A54ADD;
 }
 
-#map .img {
-  height: auto;
-  width: auto;
+.subject {
+  color: #FF7A18;
+}
+
+/* Map Section */
+#map {
+  height: 30rem;
+  overflow: hidden;
+  padding: 0;
 }

@@ -9,118 +9,174 @@
 {% endblock %}
 
 {% block content %}
-<section class="hero-section">
-    <div class="container">
-        <div class="row">
-            <div class="col text-start">
-                <h1 class="fw-bold display-1">P.S.Tamarind Private Limited</h1>
-                <p class="fs-3">The Tangy Taste of India, <br>Since 1938</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="container">
-    <div class="intro-txt-container d-flex flex-column justify-content-center align-items-center mx-auto">
-        <p class="introP text-center mb-0">
-            P.S.Tamarind Private Limited is a third-generation, family-owned company known for providing our
-            customers with the highest quality tamarind around the world.
-        </p>
-    </div>
-</div>
-
-<div class="container">
-    <h2 class="mb-4">A Choice For Quality</h2>
-    <div class="container mt-5 px-0">
-        <div class="row g-4">
-            <div class="col-md-6 mb-5 mx-0">
-                <div class="shadow custom-box p-5 d-flex align-items-center justify-content-center">
-                    <img src="{% static 'web/img/ps-text.png' %}" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-6 mb-5">
-                <div class="shadow custom-box p-5 d-flex align-items-center justify-content-center">
-                    <img src="{% static 'web/img/500g_tamarind.png' %}" class="img-fluid">
+<main>
+    <section class="hero-section">
+        <div class="container">
+            <div class="row px-4">
+                <div class="col text-start text-white px-0">
+                    <h1 class="fw-bold display-2">P.S.Tamarind Private Limited</h1>
+                    <p class="fs-3">The Tangy Taste of India, <br>Since 1938</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="body2 px-3">
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery1.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery2.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery3.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery4.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery5.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery6.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery7.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery8.jpg' %}" draggable="false">
-            <img class="cimage shadow" src="{% static 'web/img/carousel/gallery9.jpg' %}" draggable="false">
+    </section>
+    <section class="about-section">
+        <div class="container px-4">
+            <div class="div my-5">
+                <p class="text-center align-middle py-5 px-3">
+                    P.S.Tamarind Private Limited is a third-generation, family-owned company known for providing our
+                    customers with the highest quality tamarind around the world.
+                </p>
+            </div>
         </div>
-    </div>
-</div>
-
-<section class="featured-articles">
-    <div class="container mt-5">
-        <h2 class="my-5">Featured Articles</h2>
-        <div class="row row-cols-1 row-cols-md-3 g-1">
-            <div class="col mt-0 mb-5 px-0">
-                <div class="card p-3 shadow custom-card">
-                    <div class="card-header py-0">
-                        <small class="fw-bold article-txt">Article </small>
-                        <small class="text-muted">on Nov 1, 2023</small>
-                    </div>
-                    <div class="card-body py-0">
-                        <h4 class="card-title py-4">The Best Tamarind Website? A Story</h5>
-                            <h6 class="topic-txt">WEB DESIGN</h6>
-                    </div>
-                    <div class="d-flex align-items-start px-3 mb-3">
-                        <a href="#" class="btn p-0 text-muted">Read more...</a>
-                    </div>
-                    <div class="card-footer">
-                        <img src="{% static 'web/img/profile-pic.jpg' %}" class="card-profile">
-                        <span class="fw-bold ps-2">S.Maheshram</span>
+    </section>
+    <section class="product-section">
+        <div class="container px-4">
+            <h2 class="my-5">A Choice for Quality</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 pb-5 gy-4">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="{% static 'web/img/500g_tamarind.png' %}" class="card-img-top mb-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-muted text-center pb-3">250 grams</p>
+                            <p class="card-text pt-2 px-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Saepe
+                                eum nam reiciendis libero, tenetur facilis consequuntur quo unde veritatis blanditiis
+                                iste
+                                numquam quos nemo deserunt qui incidunt, accusamus tempore minima!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mt-0 mb-5 px-0">
-                <div class="card p-3 shadow custom-card">
-                    <div class="card-header py-0">
-                        <small class="fw-bold article-txt">Article </small>
-                        <small class="text-muted">on Jan 29, 2024</small>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="{% static 'web/img/500g_tamarind.png' %}" class="card-img-top mb-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-muted text-center pb-3">500 grams</p>
+                            <p class="card-text pt-2 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Accusamus, eaque vitae? Blanditiis commodi aspernatur obcaecati. Consectetur libero
+                                autem
+                                sed, sint sequi voluptatem at esse, aperiam cum harum minima ab. Porro, cumque, rerum
+                                aliquid, odit impedit commodi maxime rem placeat magnam nostrum vero?</p>
+                        </div>
                     </div>
-                    <div class="card-body py-0">
-                        <h4 class="card-title py-4">The Legacy of P.Shunmugam</h5>
-                            <h6 class="topic-txt">VALUES</h6>
-                    </div>
-                    <div class="d-flex align-items-start px-3 mb-3">
-                        <a href="#" class="btn p-0 text-muted">Read more...</a>
-                    </div>
-                    <div class="card-footer">
-                        <img src="{% static 'web/img/profile-pic.jpg' %}" class="card-profile">
-                        <span class="fw-bold ps-2">S.Maheshram</span>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <img src="{% static 'web/img/500g_tamarind.png' %}" class="card-img-top mb-3" alt="...">
+                        <div class="card-body">
+                            <p class="card-title text-muted text-center pb-3">1 kilogram</p>
+                            <p class="card-text pt-2 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Totam
+                                expedita suscipit doloribus officiis soluta. Itaque, libero sint, quis optio unde harum
+                                praesentium perspiciatis deleniti dolores pariatur natus!</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="world-map">
-    <div class="container mt-5">
-        <h2 class="my-5">Available All Over the World</h2>
-        <div class="row">
-            <div class="col-md-12 mb-5">
-                <div id="map" class="shadow d-flex align-items-center justify-content-center mb-5"></div>
+    </section>
+    <section class="gallery-section">
+        <div class="container px-4">
+            <h2 class="my-5">The Journey to Benchmark</h2>
+            <div class="row mb-1 pb-5">
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                    <div class="row">
+                        <div class="col-md-6  col-lg-12">
+                            <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+    <section class="article-section">
+        <div class="container px-4 my-5">
+            <h2 class="my-5">Featured Articles</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5">
+                <div class="col">
+                    <div class="card h-100 border-0 shadow p-3">
+                        <div class="card-header bg-white border-0">
+                            <span class="fw-bold article-title">Article </span>
+                            <span class="text-muted">on Jan 29, 2024</span>
+                        </div>
+                        <div class="card-body mb-5">
+                            <h4 class="card-title">The Legacy of P.Shunmugam</h4>
+                            <h6 class="topic-txt subject pt-2">VALUES</h6>
+                        </div>
+                        <a href="#" class="btn text-muted text-start px-3 mt-5">Read more...</a>
+                        <div class="card-footer bg-white border-0 pt-3">
+                            <img src="{% static 'web/img/profile-pic.jpg' %}" class="card-profile">
+                            <span class="fw-bold ps-2">Maheshram</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow p-3">
+                        <div class="card-header bg-white border-0">
+                            <span class="fw-bold article-title">Article </span>
+                            <span class="text-muted">on Jan 29, 2024</span>
+                        </div>
+                        <div class="card-body mb-5">
+                            <h4 class="card-title">The Legacy of P.Shunmugam</h4>
+                            <h6 class="topic-txt subject pt-2">VALUES</h6>
+                        </div>
+                        <a href="#" class="btn text-muted text-start px-3 mt-5">Read more...</a>
+                        <div class="card-footer bg-white border-0 pt-3">
+                            <img src="{% static 'web/img/profile-pic.jpg' %}" class="card-profile">
+                            <span class="fw-bold ps-2">Maheshram</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 shadow p-3">
+                        <div class="card-header bg-white border-0">
+                            <span class="fw-bold article-title">Article </span>
+                            <span class="text-muted">on Jan 29, 2024</span>
+                        </div>
+                        <div class="card-body mb-5">
+                            <h4 class="card-title">The Legacy of P.Shunmugam</h4>
+                            <h6 class="topic-txt subject pt-2">VALUES</h6>
+                        </div>
+                        <a href="#" class="btn text-muted text-start px-3 mt-5">Read more...</a>
+                        <div class="card-footer bg-white border-0 pt-3">
+                            <img src="{% static 'web/img/profile-pic.jpg' %}" class="card-profile">
+                            <span class="fw-bold ps-2">Maheshram</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map-section">
+        <div class="container px-4 my-5">
+            <h2 class="my-5">Available All Over the World</h2>
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div id="map" class="d-flex align-items-center justify-content-center shadow rounded"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
-<script src="{% static 'web/js/carousel.js' %}"></script>
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="{% static 'web/js/map.js' %}"></script>
 
