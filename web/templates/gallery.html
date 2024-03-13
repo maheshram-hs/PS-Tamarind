@@ -1,7 +1,78 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/gallery.css' %}">
+{% endblock %}
+{% endblock %}
+
 {% block content %}
-<div class="container-fluid">
-    <h1>Gallery</h1>
-    <p>Pictures & Videos</p>
-</div>
+<main>
+    <section class="gallery-section">
+        <div class="container px-4">
+            <h1 class="my-4">Gallery</h1>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <img class="img-fluid w-100 h-100 rounded" src="https://picsum.photos/200" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 {% endblock %}

@@ -1,0 +1,8 @@
+/* Gallery Section */
+.gallery-section {
+    height: 100vh;
+}
+.img-container {
+    height: 25vmin;
+    width: 25vmin;
+}
