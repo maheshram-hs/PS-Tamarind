@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var map = L.map('map').setView([0, 0], 2); // Set the initial view
+    var map = L.map('map').setView([20.5937, 78.9629], 2); // Set the initial view
 
     // Add a base map layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
