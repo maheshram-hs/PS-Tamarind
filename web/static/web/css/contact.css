@@ -1,4 +1,8 @@
 /* Location Section */
+.email-link-text {
+    color: inherit; /* Set the color to inherit from the parent element */
+    text-decoration: underline; /* Add underline */
+}
 
 /* Enquiry section */
 .alert-custom {
