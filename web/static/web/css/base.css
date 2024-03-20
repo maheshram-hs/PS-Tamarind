@@ -19,6 +19,7 @@ body {
 }
 
 /* Footer */
+
 .custom-footer {
     border: 0;
     background-color: #522C69;
@@ -49,4 +50,14 @@ body {
 
 .social_icons {
     width: 30px
+}
+
+.content-bracket {
+    width: 14rem;
+    height: auto
+}
+
+.footer-img {
+    width: 13rem;
+    height: auto
 }

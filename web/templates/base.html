@@ -45,62 +45,72 @@
     {% block content %}
     {% endblock %}
     <footer class="custom-footer">
-        <div class="container-fluid px-4">
-            <div class="row pt-5 pb-3 d-flex justify-content-center">
-                <div class="col-md-2 d-flex d-flex justify-content-start align-items-center">
-                    <div class="d-none d-lg-block d-print-block"><a class="navbar-brand"><img src="{% static 'web/img/LogoBR.png' %}" class="custom-logo-ft"></a></div>
+        <div class="container">
+            <div class="row d-flex justify-content-start justify-content-md-center px-4 pt-5 pb-4">
+                <div class="col-md-6 col-lg-3 d-flex justify-content-md-center px-0 ps-lg-3">
+                    <div class="content-bracket">
+                        <h4 class="mb-3">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li>T: +91 435 2420019</li>
+                            <li>HP: +91 94427 60019</li>
+                            <li>E: pstamarind@gmail.com</li>
+                            <li>W: pstamarind.com</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-md-2">
-                    <h4 class="mb-3">Website</h4>
-                    <div class="row">
-                        <div class="col-4">
-                            <ul class="list-unstyled">
-                                <li><a href="{% url 'index' %}">Home</a></li>
-                                <li><a href="{% url 'about' %}">Our Story</a></li>
-                                <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                                <!-- TODO: Update url with admin site -->
-                                <li><a href="{% url 'index' %}">Admin</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-8">
-                            <ul class="list-unstyled">
-                                <li><a href="{% url 'blog' %}">Blog</a></li>
-                                <li><a href="{% url 'contact' %}">Contact</a></li>
-                            </ul>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-md-center px-0 ps-lg-3">
+                    <div class="content-bracket">
+                        <h4 class="mb-3">Address</h4>
+                        <p class="#">
+                            #34, P.Shunmugam Road,<br>
+                            Kumbakonam, Tamil Nadu<br>
+                            Pin: 612001, India
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-md-center px-0 ps-lg-3">
+                    <div class="content-bracket">
+                        <h4 class="mb-3">Website</h4>
+                        <div class="row">
+                            <div class="col-4">
+                                <ul class="list-unstyled">
+                                    <li><a href="{% url 'index' %}">Home</a></li>
+                                    <li><a href="{% url 'about' %}">Our Story</a></li>
+                                    <li><a href="{% url 'gallery' %}">Gallery</a></li>
+                                    <!-- TODO: Update url with admin site -->
+                                    <li><a href="{% url 'index' %}">Admin</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-8">
+                                <ul class="list-unstyled">
+                                    <li><a href="{% url 'blog' %}">Blog</a></li>
+                                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2">
-                    <h4 class="mb-3">Address</h4>
-                    <p>#34, P.Shunmugam Road,<br>
-                        Kumbakonam, Tamil Nadu<br>
-                        Pin: 612001, India</p>
-                </div>
-                <div class="col-md-2">
-                    <h4 class="mb-3">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li>T: +91 435 2420019</li>
-                        <li>HP: +91 94427 60019</li>
-                        <li>E: pstamarind@gmail.com</li>
-                        <li>W: pstamarind.com</li>
-                    </ul>
-                </div>
-                <div class="col-md-2 d-flex justify-content-end align-items-center">
-                    <div class="d-none d-lg-block d-print-block"><a class="navbar-brand"><img src="{% static 'web/img/ps-text.png' %}" class="custom-pslogo-ft"></a></div>
+                <div class="col-md-6 col-lg-3 d-flex justify-content-center justify-content-md-center px-0">
+                    <div class="d-flex flex-column align-items-center">
+                        <a href="#" class="mb-3"><img src="{% static 'web/img/ps-text.png' %}" class="img-fluid footer-img"></a>
+                        <div>
+                            <a class="navbar-brand me-2"><img src="{% static 'web/img/Instagram.svg' %}" class="social_icons"></a>
+                            <a class="navbar-brand me-2"><img src="{% static 'web/img/Facebook.png' %}" class="social_icons"></a>
+                            <a class="navbar-brand me-2"><img src="{% static 'web/img/WhatsApp.svg' %}" class="social_icons"></a>
+                            <a class="navbar-brand"><img src="{% static 'web/img/X.svg' %}" class="social_icons"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row pb-5 d-flex justify-content-center">
-                <div class="col-md-4 pt-3 text-left" style="border-top: 1px solid #ccc;">
-                    <p class="mb-0">Copyright © 2024 P.S.Tamarind Private Limited</p>
-                </div>                
-                <div class="col-md-6 pt-3 d-flex justify-content-end" style="border-top: 1px solid #ccc;">
-                    <p class="pe-4">Follow us:</p>
-                    <a class="navbar-brand me-2"><img src="{% static 'web/img/Instagram.svg' %}" class="social_icons"></a>
-                    <a class="navbar-brand me-2"><img src="{% static 'web/img/Facebook.png' %}" class="social_icons"></a>
-                    <a class="navbar-brand me-2"><img src="{% static 'web/img/WhatsApp.svg' %}" class="social_icons"></a>
-                    <a class="navbar-brand"><img src="{% static 'web/img/X.svg' %}" class="social_icons"></a>
-                </div>
+            <hr class="hr my-0" />
+            <div class="text-center p-4">
+                <small>
+                    <span class="d-block d-md-inline">© 1938 - 2024 P.S.Tamarind</span>
+                    <span class="d-block d-md-inline"> x </span>
+                    <span class="d-block d-md-inline">Created by Maheshram</span>
+                </small>
             </div>
+                      
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
