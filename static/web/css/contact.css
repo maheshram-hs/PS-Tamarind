@@ -1,10 +1,14 @@
 /* Location Section */
+.email-link-text {
+    color: inherit; /* Set the color to inherit from the parent element */
+    text-decoration: underline; /* Add underline */
+}
 
 /* Enquiry section */
 .alert-custom {
-    background-color: #522C69; /* Specify your desired background color */
-    border-color: #522C69; /* Specify your desired border color */
-    color: white; /* Specify your desired text color */
+    background-color: #522c697d; /* Specify your desired background color */
+    border: none; /* Specify your desired border color */
+    color: #fff; /* Specify your desired text color */
 }
 
 /* Custom CSS for the button */
