@@ -11,4 +11,15 @@ class ImageAdmin(admin.ModelAdmin):
         return os.path.basename(obj.image.name)
     image_file_name.short_description = 'Image File Name'
 
+    def delete_queryset(self, request, queryset):
+        for image in queryset:
+            # Delete the image file from the media directory
+            if image.image:
+                image_path = image.image.path
+                if os.path.exists(image_path):
+                    os.remove(image_path)
+        
+        # Call the superclass method to delete the objects from the database
+        super().delete_queryset(request, queryset)
+
 admin.site.register(Image, ImageAdmin)

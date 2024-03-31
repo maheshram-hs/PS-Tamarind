@@ -15,53 +15,42 @@
             <div class="row">
                 {% for image in images %}
                 <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{{ image.image.url }}" alt=""></div>
+                    <div class="img-container rounded shadow">
+                        <img class="img-preview" src="{{ image.image.url }}" alt="" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-url="{{ image.image.url }}">
+                    </div>
                 </div>
                 {% empty %}
                 <h3>No photos available</h3>
                 {% endfor %}
             </div>
-            <div class="row">
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery7.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery8.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery9.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery10.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery11.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery12.jpg' %}" alt=""></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery12.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery13.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery14.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery15.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery16.jpg' %}" alt=""></div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
-                    <div class="img-container rounded shadow"><img class="#" src="{% static 'web/img/carousel/gallery17.jpg' %}" alt=""></div>
-                </div>
-            </div>
         </div>
     </section>
 </main>
+
+<!-- Bootstrap Modal for Image Preview -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-body p-2">
+                <img class="img-fluid" id="modalImage" src="" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+{% block scripts %}
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var imgPreviews = document.querySelectorAll('.img-preview');
+        var modalImage = document.getElementById('modalImage');
+
+        imgPreviews.forEach(function (imgPreview) {
+            imgPreview.addEventListener('click', function () {
+                var imageUrl = this.getAttribute('data-image-url');
+                modalImage.setAttribute('src', imageUrl);
+            });
+        });
+    });
+</script>
 {% endblock %}
+{% endblock %}
+
