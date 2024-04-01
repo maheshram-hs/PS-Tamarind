@@ -32,9 +32,6 @@
                     <li class="nav-item me-5">
                         <a class="nav-link" aria-current="page" href="{% url 'gallery' %}">Gallery</a>
                     </li>
-                    <li class="nav-item me-5">
-                        <a class="nav-link" aria-current="page" href="{% url 'blog' %}">Blog</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="{% url 'contact' %}">Contact</a>
                     </li>
@@ -54,16 +51,14 @@
                             <div class="col-4">
                                 <ul class="list-unstyled">
                                     <li><a href="{% url 'index' %}">Home</a></li>
-                                    <li><a href="{% url 'about' %}">Our Story</a></li>
+                                    <li><a href="{% url 'about' %}">About</a></li>
                                     <li><a href="{% url 'gallery' %}">Gallery</a></li>
-                                    <!-- TODO: Update url with admin site -->
-                                    <li><a href="{% url 'admin:index' %}">Admin</a></li>
                                 </ul>
                             </div>
                             <div class="col-8">
                                 <ul class="list-unstyled">
-                                    <li><a href="{% url 'blog' %}">Blog</a></li>
                                     <li><a href="{% url 'contact' %}">Contact</a></li>
+                                    <li><a href="{% url 'admin:index' %}">Admin</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -94,10 +89,10 @@
                     <div class="d-flex flex-column align-items-center">
                         <a href="#" class="mb-3"><img src="{% static 'web/img/ps-text.png' %}" class="img-fluid footer-img"></a>
                         <div>
-                            <a class="navbar-brand me-2"><img src="{% static 'web/img/Instagram.svg' %}" class="social_icons"></a>
+                            <a class="navbar-brand me-2" href="" target="_blank"><img src="{% static 'web/img/Instagram.svg' %}" class="social_icons"></a>
                             <a class="navbar-brand me-2" href="https://www.facebook.com/pstamarind/" target="_blank"><img src="{% static 'web/img/Facebook.png' %}" class="social_icons"></a>
-                            <a class="navbar-brand me-2" href="https://wa.me/919442760019"><img src="{% static 'web/img/WhatsApp.svg' %}" class="social_icons"></a>
-                            <a class="navbar-brand"><img src="{% static 'web/img/X.svg' %}" class="social_icons"></a>
+                            <a class="navbar-brand me-2" href="https://wa.me/919442760019" target="_blank"><img src="{% static 'web/img/WhatsApp.svg' %}" class="social_icons"></a>
+                            <a class="navbar-brand" href="" target="_blank"><img src="{% static 'web/img/X.svg' %}" class="social_icons"></a>
                         </div>
                     </div>
                 </div>

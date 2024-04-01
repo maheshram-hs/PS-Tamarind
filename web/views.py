@@ -14,8 +14,11 @@ def gallery(request):
     context = {'images': images}
     return render(request, 'gallery.html', context)
 
+# Blog Page (If required)
+"""
 def blog(request):
     return render(request, 'blog.html')
+"""
 
 def contact(request):
     return render(request, 'contact.html')
