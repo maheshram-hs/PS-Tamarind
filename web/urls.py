@@ -9,8 +9,8 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('about/', views.about, name='about'),
     path('gallery/', views.gallery, name='gallery'),
-    # path('blog/', views.blog, name='blog'),  --> If required
     path('contact/', views.contact, name='contact'),
+    path('enquiry/', views.enquiry, name='enquiry'),
 ]
 
 if settings.DEBUG:
