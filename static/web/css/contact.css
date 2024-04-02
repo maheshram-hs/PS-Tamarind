@@ -1,0 +1,53 @@
+/* Location Section */
+.email-link-text {
+    color: inherit; /* Set the color to inherit from the parent element */
+    text-decoration: underline; /* Add underline */
+}
+
+/* Enquiry section */
+.alert-custom {
+    background-color: #522c697d; /* Specify your desired background color */
+    border: none; /* Specify your desired border color */
+    color: #fff; /* Specify your desired text color */
+}
+
+/* Custom CSS for the button */
+.btn-custom {
+    background-color: #522C69; /* Set custom background color */
+    border-color: #522C69; /* Set custom border color */
+    color: #fff; /* Set custom text color */
+}
+
+/* Optional: Hover effect */
+.btn-custom:hover {
+    background-color: #3d1f4a; /* Adjust hover background color */
+    border-color: #3d1f4a; /* Adjust hover border color */
+    color: #fff; /* Adjust hover text color */
+}
+
+
+/* Muted Placeholder Text */
+.enquiry-section ::-webkit-input-placeholder {
+    color: #6c757d; /* Muted color */
+    opacity: 0.5; /* Reduced opacity */
+}
+
+.enquiry-section :-moz-placeholder {
+    color: #6c757d; /* Muted color */
+    opacity: 0.5; /* Reduced opacity */
+}
+
+.enquiry-section ::-moz-placeholder {
+    color: #6c757d; /* Muted color */
+    opacity: 0.5; /* Reduced opacity */
+}
+
+.enquiry-section :-ms-input-placeholder {
+    color: #6c757d; /* Muted color */
+    opacity: 0.5; /* Reduced opacity */
+}
+
+/* Darker Label Text */
+.enquiry-section .form-label {
+    color: black; /* Darker color */
+}

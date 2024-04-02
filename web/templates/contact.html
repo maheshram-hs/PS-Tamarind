@@ -1,7 +1,98 @@
 {% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'web/css/contact.css' %}">
+{% endblock %}
+{% endblock %}
+
 {% block content %}
-<div class="container-fluid">
-    <h1>Contact Us</h1>
-    <p>Company Information</p>
-</div>
+<main>
+    <section class="info-section">
+        <div class="container px-4 my-5">
+            <h1>Get in Touch</h1>
+            <p class="mb-0">We're Here to Listen and Assist! P.S.Tamarind Pvt. Ltd. Customer service is supported by our
+                extensive networks within the company. We committed to delivering world-class services to all.</p>
+        </div>
+    </section>
+    <section class="location-section">
+        <div class="container px-4 mb-5">
+            <div class="row align-items-md-stretch">
+                <div class="col-md-6">
+                    <div class="rounded mb-5 h-100">
+                        <iframe class="img-fluid shadow w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998068.3318260885!2d78.49943780463278!3d12.01063263700592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baacd4fc93a7217%3A0xe0e47d1b59f34e73!2sP.S.Tamarind%20Private%20Limited!5e0!3m2!1sen!2sin!4v1710605997225!5m2!1sen!2sin" style="border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6 ps-md-5">
+                    <div class="pb-3 pt-5 pt-md-0">
+                        <div class="h2 fw-bold" id="current-time"></div>
+                        <p class="email-link mb-1"><a href="mailto:info@pstamarind.com" class="email-link-text">info@pstamarind.com</a></p>
+                        <p class="mb-0">+91 435 2420019</p>
+                    </div>
+                    <div class="address py-3">
+                        <h6>Head Office</h6>
+                        <p>
+                            #34, P.Shunmugam Road,<br>
+                            Kumbakonam, Tamil Nadu<br>
+                            Pin: 612001, India
+                        </p>
+                    </div>
+                    <div class="timimg pt-3">
+                        <h6>Opening Hours</h6>
+                        <p>
+                            Mon - Sat<br>
+                            10:00 am - 9:00 pm
+                        </p>
+                        <p class="mb-0">
+                            (Excluding Indian Public Holidays)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="enquiry-section">
+        <div class="container px-4 my-5 pb-5">
+            <h4>Online Enquiry</h4>
+            <div class="alert alert-primary my-3 alert-custom shadow" role="alert">
+                Will take less then 2 minues!
+            </div>
+            <div class="rounded shadow p-3">
+                <form method="post" action="{% url 'enquiry' %}">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col">
+                            <div class="mt-3">
+                                <label for="question" class="form-label w-100">Your question</label>
+                                <textarea class="form-control" id="question" name="question" rows="4" placeholder="e.g. How do I place a..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="mb-3 mt-3">
+                                <label for="email" class="form-label w-100">Your email to be notified at</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="mb-3 mt-3">
+                                <label for="name" class="form-label w-100">Your name</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col py-3 d-flex justify-content-end">
+                            <button class="btn btn-custom px-4" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="{% static 'web/js/time.js' %}"></script>
 {% endblock %}

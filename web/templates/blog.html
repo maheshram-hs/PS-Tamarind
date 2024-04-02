@@ -1,7 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
+
 {% block content %}
-<div class="container-fluid">
-    <h1>Blog</h1>
-    <p>Stories</p>
-</div>
+<section class="under-construction">
+    <div class="container">
+        <div class="d-flex align-items-center justify-content-center mt-5"><h1>Comming soon!</h1></div>
+        <div class="d-flex align-items-center justify-content-center m-5 p5">
+            <img class="img-fluid" src="{% static 'web/underdev.gif' %}" alt="GIF">
+        </div>
+    </div>
+</section>
 {% endblock %}
