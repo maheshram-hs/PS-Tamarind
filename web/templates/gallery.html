@@ -14,7 +14,7 @@
             <h1 class="my-4 pb-5">Gallery</h1>
             <div class="row">
                 {% for image in images %}
-                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
                     <div class="img-container rounded shadow">
                         <img class="img-preview" src="{{ image.image.url }}" alt="" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-url="{{ image.image.url }}">
                     </div>
