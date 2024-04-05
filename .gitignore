@@ -33,3 +33,6 @@ secret_key.txt
 pstamarind_uwsgi.ini
 uwsgi_params
 
+# Other
+test.py
+
