@@ -14,6 +14,11 @@ document.addEventListener('DOMContentLoaded', function () {
         'France': [46.603354, 1.888334],
         'UnitedKingdom': [55.3781, -3.4360],
         'UnitedStates': [37.0902, -95.7129],
+        'Switzerland': [46.8182, 8.2275],
+        'Australia': [-25.2744, 133.7751],
+        'HongKong': [22.3193, 114.1694],
+        'Canada': [56.1304, -106.3468],
+        'Qatar': [25.3548, 51.1839]
     };
     
 
