@@ -11,6 +11,7 @@ __pycache__/
 *.sqlite3
 db.sqlite3
 media/
+settings_local.py
 
 # Virtual environment
 venv/

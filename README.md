@@ -35,7 +35,7 @@ The goal of this website is to serve as an advertising platform, making it easie
 
     ```bash
     cd your-repository
-    python -m venv venv
+    python3 -m venv venv
     source venv/bin/activate  # On macOS/Linux, or venv\Scripts\activate on Windows
     pip install -r requirements.txt
     ```
