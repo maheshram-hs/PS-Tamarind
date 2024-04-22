@@ -1,6 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html prefix="og: https://ogp.me/ns#" lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,11 @@
     <link href="{% static 'web/bootstrap-5.3.3-dist/css/bootstrap.min.css' %}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{% static 'web/css/base.css' %}">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="P.S.Tamarind">
+    <meta property="og:description" content="Discover the premier branded wholesale supplier of top-quality tamarind products and explore our wide range of tamarind offerings.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{% static 'web/img/thumbnail-logo.jpg' %}">
     {% block head %}{% endblock %}
 </head>
 
@@ -70,7 +75,7 @@
                                 target="_blank"><img src="{% static 'web/img/Facebook.png' %}" class="social_icons"></a>
                             <a class="navbar-brand me-2" href="https://wa.me/919442760019" target="_blank"><img
                                     src="{% static 'web/img/WhatsApp.svg' %}" class="social_icons"></a>
-                            <a class="navbar-brand" href="" target="_blank"><img src="{% static 'web/img/X.svg' %}"
+                            <a class="navbar-brand" href="https://twitter.com/PSTamarind" target="_blank"><img src="{% static 'web/img/X.svg' %}"
                                     class="social_icons"></a>
                         </div>
                     </div>
