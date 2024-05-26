@@ -11,7 +11,7 @@ def about(request):
     return render(request, 'about.html')
 
 def gallery(request):
-    images = Image.objects.all()
+    images = Image.objects.all().order_by('-id')
     print("Number of images:", len(images))
     context = {'images': images}
     return render(request, 'gallery.html', context)
