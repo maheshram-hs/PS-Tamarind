@@ -19,8 +19,8 @@
                     <div class="img-container rounded shadow">
                         <img class="img-preview" src="{{ image.image.url }}" alt="" data-bs-toggle="modal" data-bs-target="#imageModal" data-image-url="{{ image.image.url }}">
                     </div>
+                    <p>{{ image.name }}</p>
                 </div>
-                <p>{{ image.name }}</p>
                 {% empty %}
                 <h3>No photos available</h3>
                 {% endfor %}
