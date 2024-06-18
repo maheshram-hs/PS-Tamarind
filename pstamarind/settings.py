@@ -132,7 +132,7 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'pstamarind.smtp@gmail.com'
 EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 EMAIL_USE_TLS = True
-EMAIL_USE_SSL = True
+EMAIL_USE_SSL = False
 
 # HTTPS settings
 SESSION_COOKIE_SECURE = True
