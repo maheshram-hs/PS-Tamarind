@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from django.core.mail import send_mail
+from django.conf import settings
 from .forms import QueryForm
 from web.models import Image
 
@@ -27,12 +28,12 @@ def enquiry(request):
             email = form.cleaned_data['email']
             question = form.cleaned_data['question']
             
-            # Send email
+            # Send email using Django's send_mail function
             send_mail(
                 'New Enquiry',
                 f'Name: {name}\nEmail: {email}\nQuestion: {question}',
-                'from@example.com',  # Sender's email address
-                ['to@example.com'],  # Receiver's email address
+                settings.EMAIL_HOST_USER,  # Sender's email address from settings
+                ['pstamarind@gmail.com'],  # Receiver's email address
                 fail_silently=False,
             )
             return redirect('contact')  # Redirect to contact page after form submission
