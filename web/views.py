@@ -20,6 +20,12 @@ def gallery(request):
 def contact(request):
     return render(request, 'contact.html')
 
+from django.core.mail import send_mail, BadHeaderError
+from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from .forms import QueryForm  # Import your form class here
+from django.conf import settings
+
 def enquiry(request):
     if request.method == 'POST':
         form = QueryForm(request.POST)
@@ -28,14 +34,19 @@ def enquiry(request):
             email = form.cleaned_data['email']
             question = form.cleaned_data['question']
             
-            # Send email using Django's send_mail function
-            send_mail(
-                'New Enquiry',
-                f'Name: {name}\nEmail: {email}\nQuestion: {question}',
-                settings.EMAIL_HOST_USER,  # Sender's email address from settings
-                ['pstamarind@gmail.com'],  # Receiver's email address
-                fail_silently=False,
-            )
+            try:
+                send_mail(
+                    'New Enquiry',
+                    f'Name: {name}\nEmail: {email}\nQuestion: {question}',
+                    settings.EMAIL_HOST_USER,  # Sender's email address from settings
+                    ['to@example.com'],  # Receiver's email address
+                    fail_silently=False,
+                )
+            except BadHeaderError as e:
+                return HttpResponse('Invalid header found.')
+            except Exception as e:
+                return HttpResponse(f'Error sending email: {str(e)}')
+            
             return redirect('contact')  # Redirect to contact page after form submission
     else:
         form = QueryForm()
