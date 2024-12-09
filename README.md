@@ -1,5 +1,8 @@
 # P.S.Tamarind Private Limited - Website
 
+We are excited to announce that pstamarind.com has been revamped with a brand-new design and improved features to serve you better!
+This previous website has been officially taken down, and the new website is will be soon live. Please visit the updated version at:
+
 Website: [pstamarind.com](https://pstamarind.com)
 
 ## Overview
